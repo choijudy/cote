@@ -5,13 +5,13 @@ public class Main {
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
-        int a = Integer.parseInt(st.nextToken());
-        int b = Integer.parseInt(st.nextToken());
+        Long a = Long.parseLong(st.nextToken());
+        Long b = Long.parseLong(st.nextToken());
 
         System.out.println(func(a,b));
     }
 
-    public static int func(int a, int b){
+    public static Long func(Long a, Long b){
         return (a+b)*(a-b);
     }
 }
